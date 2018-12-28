@@ -34,6 +34,7 @@ yarn serve
 ## TODO
 
 - Test
+- Disable console from service worker in prod mode
 
 ## License
 
