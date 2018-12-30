@@ -1,5 +1,6 @@
 # htm-pwa-starter
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/666f6bb2-59dc-474d-a727-7972cc1c6c40/deploy-status)](https://app.netlify.com/sites/focused-minsky-20b3ec/deploys)
 [![License](https://img.shields.io/npm/l/make-coverage-badge.svg)](https://github.com/rjoydip/htm-pwa-starter/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
