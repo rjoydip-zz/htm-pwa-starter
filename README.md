@@ -21,9 +21,19 @@ yarn build
 yarn serve
 ```
 
+## Feature
+
+- HTM
+- PWA
+- Parcel
+- Jest
+- Babel
+- Eslint
+
 ## TODO
 
 - Test
+- Lint checking
 - Stop generate parcel map file in production
 
 ## License
