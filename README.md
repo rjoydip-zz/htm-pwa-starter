@@ -33,8 +33,6 @@ yarn serve
 ## TODO
 
 - Test
-- Lint checking
-- Stop generate parcel map file in production
 
 ## License
 
