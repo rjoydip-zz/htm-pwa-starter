@@ -18,7 +18,8 @@
   "eslintIgnore": [
     "build/*",
     "public/*",
-    "dist/*"
+    "dist/*",
+    "src/static/sw.js"
   ],
   "devDependencies": {
     "@babel/core": "^7.2.2",

@@ -1,26 +1,26 @@
 // change to the version you get from `npm ls workbox-build`
-var cacheName = 'mspwa-v1';
-var appShellFiles = [
-  '/',
-  '/index.html',
-  '/build/app.css',
-  '/build/app.js',
-  '/build/app/*',
-  '/favicon.ico',
-  '/offline.html'
+let cacheName = 'mspwa-v1';
+let appShellFiles = [
+	'/',
+	'/index.html',
+	'/build/app.css',
+	'/build/app.js',
+	'/build/app/*',
+	'/favicon.ico',
+	'/offline.html'
 ];
 
 if ('Notification' in self && 'serviceWorker' in self.navigator) {
-  Notification.requestPermission(status => {
-    // status will either be 'default', 'granted' or 'denied'
-    if (status === 'granted') {
-      // TODO
-    }
-    console.log(`Notification permissions have been ${status}`);
-  });
+	Notification.requestPermission(status => {
+		// status will either be 'default', 'granted' or 'denied'
+		if (status === 'granted') {
+			// TODO
+		}
+		console.log(`Notification permissions have been ${status}`);
+	});
 }
 
-self.addEventListener('install', function (event) {
+self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
       console.log('[Service Worker] Caching all: app shell and content');
@@ -30,7 +30,7 @@ self.addEventListener('install', function (event) {
 });
 
 //If any fetch fails, it will show the offline page.
-self.addEventListener('fetch', function (e) {
+self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches.match(e.request).then(function (r) {
       console.log('[Service Worker] Fetching resource: ' + e.request.url);
@@ -45,10 +45,10 @@ self.addEventListener('fetch', function (e) {
   );
 });
 
-self.addEventListener("message", ({
-  data
+self.addEventListener('message', ({
+	data
 }) => {
-  if (data === "skipWaiting") {
-    self.skipWaiting();
-  }
+	if (data === 'skipWaiting') {
+		self.skipWaiting();
+	}
 });
