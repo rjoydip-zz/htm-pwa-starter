@@ -3,11 +3,9 @@ let cacheName = 'mspwa-v1';
 let appShellFiles = [
 	'/',
 	'/index.html',
-	'/build/app.css',
-	'/build/app.js',
-	'/build/app/*',
-	'/favicon.ico',
-	'/offline.html'
+	'/**/*.js',
+	'/**/*.css',
+	'/favicon.ico'
 ];
 
 if ('Notification' in self && 'serviceWorker' in self.navigator) {
